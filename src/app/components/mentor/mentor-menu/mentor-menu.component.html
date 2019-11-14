@@ -1,0 +1,76 @@
+<div class="comWidth">
+  <nav class="navbar navbar-expand-sm navbar-light bg-light">
+      <a class="navbar-brand" href="#">Trainer Menu</a>
+      <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
+          data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavId">
+          <form class="form-inline mr-auto my-2 my-lg-0">
+          </form>
+          <ul class="navbar-nav mt-2 mt-lg-0">
+              <li class="nav-item">
+                  <a class="nav-link" href="#"><span class="fa fa-bell">Notifications</span></a>
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" id="dropdownId" data-toggle="dropdown"
+                      aria-haspopup="true" aria-expanded="false"><span class="fa fa-user">User</span></a>
+                  <div class="dropdown-menu" aria-labelledby="dropdownId">
+                      <a class="dropdown-item" href="#">Logout</a>
+                      <a class="dropdown-item" href="#">Profile</a>
+                  </div>
+              </li>
+          </ul>
+      </div>
+  </nav>
+  <!-- <table class="table table-dark table-hover">
+      <thead>
+          <tr>
+              <th>Current Trainings</th>
+              <th>Completed trainings</th>
+              <th>Edit Skills</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <td scope="row">
+
+              </td>
+              <td></td>
+              <td>
+
+              </td>
+          </tr>
+          <tr>
+              <td scope="row">
+              </td>
+              <td></td>
+              <td>
+              </td>
+          </tr>
+      </tbody>
+  </table> -->
+  <div class="container-fluid">
+    <div class="row row-style">
+      <div class="col-4">
+        <h4>Search Trainings</h4>
+        <ul *ngFor="let item of searchList">
+          <li>{{item}}</li>
+        </ul>
+      </div>
+      <div class="col-4">
+          <h4>Completed Trainings</h4>
+          <ul>
+            <li></li>
+          </ul>
+      </div>
+      <div class="col-4">
+          <h4>Edit Skills</h4>
+          <ul>
+            <li></li>
+          </ul>
+      </div>
+    </div>
+  </div>
+</div>

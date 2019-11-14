@@ -1,0 +1,24 @@
+.input-group-prepend span {
+  width: 300px;
+  background-color: #FFC312;
+  color: black;
+  border: 0 !important;
+}
+.leftArea{
+  float: left;
+  width: 100px;
+  height: 40px;
+}
+.leftArea input{
+  width: 100px;
+  height: 40px;
+}
+.rightArea{
+  float: right;
+  width: 100px;
+  height: 40px;
+}
+.rightArea input{
+  width: 100px;
+  height: 40px;
+}

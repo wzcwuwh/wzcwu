@@ -1,0 +1,12 @@
+.card {
+  height: 670px;
+  width: 800px;
+}
+
+.input-group-prepend span {
+  width: 300px;
+}
+
+.input-check {
+  color: white;
+}

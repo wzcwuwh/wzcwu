@@ -1,0 +1,75 @@
+<h2 class="header">Search Result for '{{ searchClickTxt }}' Training</h2>
+<table class="table table-dark table-hover">
+  <thead>
+    <tr>
+      <th>Pic</th>
+      <th>Trainer Name</th>
+      <th>Avg Rating</th>
+      <th>No. of Trainings completed</th>
+      <th>Propose Training</th>
+    </tr>
+  </thead>
+  <tbody style="text-align: center">
+    <tr (click)="trainerDetail()">
+      <td scope="row">
+        <img
+          src="http://blog.transfer-iphone-recovery.com/images/photo-with-blur-background.jpg"
+          alt="Training Name"
+          width="100px"
+          height="100px"
+        />
+      </td>
+      <td>Training Name1</td>
+      <td>
+        <ul id="star-items" *ngFor="let item of starItems; let key = index">
+          <li class="star-item" 
+          (mouseover)="starMouseover(key)" 
+          (mouseout)="starMouseout(key)" 
+          (click)="starClick(key)"
+          >
+          <span class="fas fa-star"></span>
+          </li>
+        </ul>
+      </td>
+      <td>
+        No. of Training completed
+      </td>
+      <td>
+        <input name="" id="" class="btn btn-primary" type="button" value="Propose">
+      </td>
+    </tr>
+    <tr>
+      <td scope="row">
+        <img
+          src="http://blog.transfer-iphone-recovery.com/images/photo-with-blur-background.jpg"
+          alt="Training Name"
+          width="100px"
+          height="100px"
+        />
+      </td>
+      <td>Training Name2</td>
+      <td>
+          <ul id="star-items" *ngFor="let item of starItems; let key = index">
+              <li class="star-item" 
+              (mouseover)="starMouseover(key)" 
+              (mouseout)="starMouseout(key)" 
+              (click)="starClick(key)"
+              >
+              <i class="fas fa-star"></i>
+              </li>
+            </ul>
+      </td>
+      <td>
+        No. of Training completed
+      </td>
+      <td>
+        <input name="" id="" class="btn btn-primary" type="button" value="Propose">
+      </td>
+    </tr>
+  </tbody>
+</table>
+<div class="mask" *ngIf="maskShow" [ngStyle]="{'width': maskWidth,'height': maskHeight}">
+  <div class="mentorInfo">
+    <app-user-mentor-info (parentMaskOff)="runMaskOff($event)"></app-user-mentor-info>
+  </div>
+</div>

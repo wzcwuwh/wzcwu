@@ -1,0 +1,5 @@
+<div class="comWidth">
+  <app-user-menu-nav (searchClick)='searchClick($event)' #userMenuNav></app-user-menu-nav>
+  <app-user-menu-list *ngIf="userMenuListShow" [navSearchTxt]="navSearchTxt"></app-user-menu-list>
+  <app-user-search-result *ngIf="userSearchResultShow" [searchClickTxt]="searchClickTxt"></app-user-search-result>
+</div>

@@ -1,0 +1,6 @@
+<div class="comWidth">
+  <app-admin-menu-nav (navToggle)="navToggle($event)"></app-admin-menu-nav>
+  <app-admin-menu-tech *ngIf="techShow"></app-admin-menu-tech>
+  <app-admin-menu-block *ngIf="blockShow"></app-admin-menu-block>
+  <app-admin-menu-payment *ngIf="paymentShow"></app-admin-menu-payment>
+</div>

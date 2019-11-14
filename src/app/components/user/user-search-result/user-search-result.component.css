@@ -1,0 +1,38 @@
+.header{
+  text-align: center;
+  color: #FFC312;
+}
+#star-items { 
+  display:inline-block; 
+}
+.star-item{
+  width: 30px;
+  height: 13px;
+  cursor: pointer;
+}
+thead{
+  text-align: center;
+}
+td{
+  vertical-align: middle;
+  text-align: center;
+}
+.mask{
+  background-color: #000000;
+  opacity: 0.75;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 100;
+}
+.mentorInfo{
+  height: 400px;
+  width: 600px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 1000;
+}
